@@ -28,3 +28,19 @@ export function getProductById(req, res) {
   if (!product) res.status(404).json({ error: "Product not found" });
   res.json(product);
 }
+
+export function addProduct(req, res) {
+  const { name, price } = req.body;
+
+  const newProduct = {
+    id: products.length ? products[products.length - 1].id + 1 : 1,
+    name,
+    price,
+  };
+
+  products.push(newProduct);
+  res.status(201).json({
+    message: "Prodcut Add",
+    product: newProduct,
+  });
+}

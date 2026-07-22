@@ -10,4 +10,13 @@ GET {{BASE_URL}}/products
 GET {{BASE_URL}}/products/search?name=key
 
 ### GET Product by id
-GET {{BASE_URL}}/products/3
+GET {{BASE_URL}}/products/2
+
+### POST Add Product
+POST {{BASE_URL}}/products
+Content-Type: application/json
+
+{
+    "name": "Macbook",
+    "price": 69000
+}
