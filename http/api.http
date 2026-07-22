@@ -28,7 +28,22 @@ GET {{BASE_URL}}/blogs
 GET  {{BASE_URL}}/blogs/2
 
 ### GET Comments
-GET {{BASE_URL}}/blogs/1/comments
+GET {{BASE_URL}}/blogs/3/comments
 
 ### GET Comment by commentId
 GET {{BASE_URL}}/blogs/1/comments/2
+
+### POST Add comment
+POST {{BASE_URL}}/blogs/3/comments
+Content-Type: application/json
+
+{
+    "author": "John",
+    "message": "Ok Yey!!"
+}
+
+### GET Comments Count
+GET {{BASE_URL}}/blogs/1/comments/count
+
+### GET Blogs Summary
+GET {{BASE_URL}}/blogs/summary

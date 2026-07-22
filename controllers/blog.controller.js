@@ -8,3 +8,12 @@ export function getBlogById(req, res) {
   res.json(req.blog);
 }
 
+export function getBlogSummary(req, res) {
+  const summary = blogs.map((b) => ({
+    id: b.id,
+    title: b.title,
+    comments: b.comments.length
+  }));
+
+  res.json(summary);
+}

@@ -30,3 +30,11 @@ export function AddComment(req, res) {
         comment: newComment
     })
 }
+
+export function getCommentCount(req, res) {
+    const comments = req.blog.comments
+
+    res.json({
+        count: comments.length
+    })
+}
