@@ -1,0 +1,13 @@
+@BASE_URL = http://localhost:3000
+
+### GET Users
+GET {{BASE_URL}}/users
+
+### GET Products
+GET {{BASE_URL}}/products
+
+### GET Search Products
+GET {{BASE_URL}}/products/search?name=key
+
+### GET Product by id
+GET {{BASE_URL}}/products/3
