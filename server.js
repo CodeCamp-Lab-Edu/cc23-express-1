@@ -1,6 +1,7 @@
 import express from "express";
 import userRoutes from './routes/user.routes.js'
 import productRoutes from './routes/product.routes.js'
+import blogRoutes from './routes/blog.routes.js'
 
 const app = express();
 const PORT = 3000
@@ -13,6 +14,7 @@ app.get("/", (req, res)=> {
 
 app.use("/users", userRoutes)
 app.use("/products", productRoutes)
+app.use("/blogs", blogRoutes)
 
 app.listen(PORT, ()=> {
     console.log(`Server running on http://localhost:${PORT}`)

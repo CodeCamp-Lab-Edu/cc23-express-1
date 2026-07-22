@@ -20,3 +20,15 @@ Content-Type: application/json
     "name": "Macbook",
     "price": 69000
 }
+
+### GET Blogs
+GET {{BASE_URL}}/blogs
+
+### GET Blog by blogId
+GET  {{BASE_URL}}/blogs/2
+
+### GET Comments
+GET {{BASE_URL}}/blogs/comments
+
+### GET Comment by commentId
+GET {{BASE_URL}}/blogs/1/comments/2
