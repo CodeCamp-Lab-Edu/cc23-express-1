@@ -28,7 +28,7 @@ GET {{BASE_URL}}/blogs
 GET  {{BASE_URL}}/blogs/2
 
 ### GET Comments
-GET {{BASE_URL}}/blogs/comments
+GET {{BASE_URL}}/blogs/1/comments
 
 ### GET Comment by commentId
 GET {{BASE_URL}}/blogs/1/comments/2
